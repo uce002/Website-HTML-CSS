@@ -214,5 +214,27 @@
         </tr>
     </table>
 
+    <br> <hr>
+
+
+    <!-- 11 BUTTONS-->
+    <a href="/Website-HTML-CSS/page2.html">
+        <button style="font-size:25px; background-color:grey; color:lightblue; border-radius:25px">
+            click me
+        </button>
+    </a>
+
+    <button onclick="doSomething()" style="font-size:25px; background-color:grey; color:lightblue; border-radius:25px">
+        click me
+    </button>
+
+    <p id="greeting">Hello</p>
+    
+    <script> //javascript
+        function doSomething() {
+            document.getElementById("greeting").innerHTML = "goodbye"
+        }
+    </script>
+
 </body>
 </html>
