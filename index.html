@@ -218,6 +218,7 @@
 
 
     <!-- 11 BUTTONS-->
+     <h1>Buttons</h1>
     <a href="/Website-HTML-CSS/page2.html">
         <button style="font-size:25px; background-color:grey; color:lightblue; border-radius:25px">
             click me
@@ -235,6 +236,46 @@
             document.getElementById("greeting").innerHTML = "goodbye"
         }
     </script>
+
+    <br> <hr>
+
+
+    <!-- 12 FORMS-->
+    <form action="index.php" method="POST"> <!-- action - where to send form to after submitted, 
+        forms submission done with backend language (php). method specifies whether get or POST, 
+        POST is for confidential (username password), get for insensitive data-->
+
+        <label for="username">username:</label> <!-- for is for screenreaders-->
+        <input type="text" id="username" placeholder="enter username here" minlength="6" maxlength="15" required> <br><!-- textbox. with the same id, clicking on the label moves cursor to textbox so youy can type immeadiately-->
+
+        <label for="password">password:</label>
+        <input type="password" id="password" placeholder="enter password here" minlength="6" maxlength="15" required><br>
+
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="uce@gmail.com"> <br>
+
+        <label for="phone">phone:</label>
+        <input type="tel" id="phone" placeholder="123-456-77890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
+            <!-- a number 0-9 3 times then a '-' same again '-' then 0-9 4 times--><br>
+
+        <label for="birthday">birthday:</label>
+        <input type="date" id="birthday"> <br>
+
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1"> <br>
+
+        <!-- radio buttons. to group them they have the same name so you can only choose one-->
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Miss.">Miss.</label>
+        <input type="radio" id="Miss." value="Miss." name="title">
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." value="Mrs." name="title"> <br>
+
+
+        <input type="reset"><br> <br>
+        <input type="submit">
+    </form>
 
 </body>
 </html>
