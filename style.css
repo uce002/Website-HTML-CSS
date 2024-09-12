@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: blue;
+}
+
+/* 
+#p1 /* id is # /* {
+    color: red;
+}
+
+#p2 {
+    color: yellow;
+}
+
+#p3 {
+    color: green;
+}
+
+#p4 {
+    color: white;
+} */
+
+.odd /* class is . */ {
+    color: red;
+}
+
+.even {
+    color: green;
+}
