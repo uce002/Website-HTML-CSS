@@ -1,15 +1,16 @@
+
 /* 14 CSS INTRO*/
 /* body {
     background-color: black;
 } */
 
-h1 {
+/* h1 {
     color: white;
-}
+} */
 
-p {
+/* p {
     color: white;
-}
+} */
 
 .odd /* class is .  id is # */ {
     color: red;
@@ -39,4 +40,18 @@ body {
 
 #p4 {
     color: hsl(301, 100%, 62%);
+}
+
+/* to keep code clean I'm now going to use best practices and not keep all the different lessons CSS separately.
+This includes writing code then rewriting/deleting it to keep the best and cleanest version possible. 
+\every time I do delete code I will try to push to version control then change and push etc*/
+h1 {
+    font-family: Roboto, verdana, arial; /* , arial is a fallback*/
+}
+
+p {
+    font-family: "Open Sans", "lucida console", "courier new"; /* if font name has a space put the name in ""*/
+    font-size: 1em; /* can use pixels or em. em is a standard e.g. 1em is 100%, 0.5em 50%, 1.2em = 120% etc*/
+    font-weight: bold; /* to make normal dont add font-weight or font-style property to css*/ 
+    font-style: italic;
 }
