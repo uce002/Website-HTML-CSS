@@ -24,7 +24,7 @@
 /* 4 types of colour: named colour, rgb(0,0,0), hexademical #ff111f ( hsl hue saturation light*/
 /* click on sqaure colour to change colours and top bar where it says rgb etc to swap through all 4*/
 body {
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(123, 123, 123);
 }
 #p1 {
     color: orange;
@@ -42,9 +42,6 @@ body {
     color: hsl(301, 100%, 62%);
 }
 
-/* to keep code clean I'm now going to use best practices and not keep all the different lessons CSS separately.
-This includes writing code then rewriting/deleting it to keep the best and cleanest version possible. 
-\every time I do delete code I will try to push to version control then change and push etc*/
 h1 {
     font-family: Roboto, verdana, arial; /* , arial is a fallback*/
 }
@@ -54,4 +51,20 @@ p {
     font-size: 1em; /* can use pixels or em. em is a standard e.g. 1em is 100%, 0.5em 50%, 1.2em = 120% etc*/
     font-weight: bold; /* to make normal dont add font-weight or font-style property to css*/ 
     font-style: italic;
+}
+
+/* going to use id's and classes to group CSS together, it may not look as neat but I think this is the best way to document everything I'm learning*/
+/* 17 BORDERS*/
+#h1-border {
+    border: 3px solid hsl(301, 100%, 62%); /* border width, style and colour*/
+    /* different styles dashed, dotted, double, groove, ridge, inset, outset, none (to remove border)*/
+    border-radius: 20px; /* round the edges. higher the pixels the more rounded*/
+}
+
+#p-border { /* can apply the 3 border properties to each direction if needed */
+    border-bottom: 3px solid rgb(161, 12, 12);
+    border-top: 3px solid rgb(216, 216, 14);
+    border-left: 3px dotted rgb(210, 137, 0);
+    border-right: 3px dotted rgb(15, 216, 15);
+    border-radius: 10px;
 }
