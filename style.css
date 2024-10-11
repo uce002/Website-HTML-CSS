@@ -68,3 +68,15 @@ p {
     border-right: 3px dotted rgb(15, 216, 15);
     border-radius: 10px;
 }
+
+/* 18 SHADOWS*/
+#h1-shadow {
+    text-shadow: 3px 3px 5px hsl(0, 55%, 36%), -3px -3px 5px hsl(237, 96%, 37%); /* horizontal and vertical offset, blur. to add another shadow add , then code*/
+}
+
+#box1-shadow {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(0, 0%, 42%);
+    box-shadow: 3px 3px 5px;
+}
