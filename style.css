@@ -80,3 +80,27 @@ p {
     background-color: hsl(0, 0%, 42%);
     box-shadow: 3px 3px 5px;
 }
+
+/* 19 MARGINS*/
+/* body {
+    margin: 0px;
+} TO MAKE ALL ELEMENTS GO WALL TO WALL. NO MARGIN, NO SPACE BETWEEN END OF THE PAGE AND TEXT, BORDER HOWEVER SEPARATES THE 2 AS THE HIERARCHY GOES
+ FOR THE PURPOSE OF THIS LESSON UNCOMMENT THIS CODE AS YOUR'E ADDING THE MARGINS IN YOURSELF BUT MARGINS ARE ALREADY PUT IN PLACE WITHOUT THIS CODE */
+
+.margins-box19 {
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    margin: auto; /* this puts both boxes in the middle*/
+    /* margin-left: auto; pushes box to the right of the screen filling in as much margin on the left as possible. margin-right: auto won't do anything as stuff is already left justified*/
+}
+
+#box1-margin {
+    background-color: hsl(0, 100%, 28%);
+    margin-bottom: 50px; /* margin-top, left, bottom and right. to make all equal just margin: auto or XXpx*/
+}
+
+#box2-margin {
+    background-color: hsl(219, 100%, 36%);
+}
