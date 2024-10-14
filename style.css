@@ -119,3 +119,14 @@ makes sure anything floating is kept inside the border*/
     float: right;
     margin-left: 10px;
 }
+
+/* 21 OVERFLOW*/
+/* overflow: visible. shows content outside the border (content that;s overflowed
+hidden. doesn't show the text past the border. the full text still remians it canbe cop pasted
+clip. same as above but you can control how much text is shown past the border and then the text stops after that
+scroll. scrollbar shows up. auto displays/disables scrollbar as and when needed*/
+#div1-overflow {
+    border: 2px solid;
+    height: 75px;
+    overflow: hidden;
+}
