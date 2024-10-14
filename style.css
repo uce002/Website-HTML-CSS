@@ -130,3 +130,34 @@ scroll. scrollbar shows up. auto displays/disables scrollbar as and when needed*
     height: 75px;
     overflow: hidden;
 }
+
+/* 22 DISPLAY*/
+#div1-display {
+    background-color: hsl(0, 54%, 53%);
+    width: 100px;
+    height: 100px;
+}
+
+#span1-display {
+    background-color: hsl(240, 45%, 64%);
+    width: 100px;
+    height: 100px;
+    display: block; /* setting display as block makes this span element behave like a block element and allows to add a width and height*/
+}
+
+#div2-display {
+    background-color: hsl(0, 54%, 53%);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#span2-display {
+    background-color: hsl(240, 45%, 64%);
+    width: 100px;
+    height: 100px;
+    display: inline-block; /* setting display as inline displays content inline with the text in the boxes then the empty div and span element is block (no text) then the rest of the text*/
+}
+
+/* display: none = removes that element
+   visibility: hidden = the space occupied by the elements stays there, just the element becomes invisible/
