@@ -161,3 +161,34 @@ scroll. scrollbar shows up. auto displays/disables scrollbar as and when needed*
 
 /* display: none = removes that element
    visibility: hidden = the space occupied by the elements stays there, just the element becomes invisible/
+
+
+/* 22 DISPLAY*/
+
+* {
+    box-sizing: border-box; /* to disregard border and padding when calculating h or w add this property. can now float both boxes to the left (fill in empty space)*/
+}
+
+.hw-box {
+    border: 2px solid;
+    padding: 25px;
+    height: auto;
+    width: 50%; /* width takes up 50% of viewport but still block level (other 50% is empty/reserved for div)*/
+    float: left;
+}
+
+.hw-container {
+    background-color: #636363;
+    height: 100vh; /* to set container height (or any height) to fill webpage use this (100 viewport height)*/
+}
+
+.hw2-box {
+    border: 2px solid;
+    padding: 25px;
+    height: auto;
+    width: 50%; /* width takes up 50% of viewport but still block level (other 50% is empty/reserved for div)*/
+    float: left;
+    text-align: center;
+
+    min-height: 50%; /*max-width and min-width override the above width property*/
+}
