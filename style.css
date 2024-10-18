@@ -163,8 +163,7 @@ scroll. scrollbar shows up. auto displays/disables scrollbar as and when needed*
    visibility: hidden = the space occupied by the elements stays there, just the element becomes invisible/
 
 
-/* 22 DISPLAY*/
-
+/* 23 HEIGHT AND WIDTH*/
 * {
     box-sizing: border-box; /* to disregard border and padding when calculating h or w add this property. can now float both boxes to the left (fill in empty space)*/
 }
@@ -191,4 +190,47 @@ scroll. scrollbar shows up. auto displays/disables scrollbar as and when needed*
     text-align: center;
 
     min-height: 50%; /*max-width and min-width override the above width property*/
+}
+
+/*24 POSITIONS*/
+#box1-positions {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 138, 224);
+    position: relative; /*can move up, down, left, right*/
+    top: 50px; /* box will be pushed down 100px relative to where it normally is*/
+    left: 50px; /* can also do -xx essentiall goes backwards*/
+}
+
+#box2-positions {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 179, 80);
+    position: fixed; /* no matter where you scroll to, the box will stay relative to the viewport (stay at the same place on the webpage) +/- the pixels you set*/
+    right: 0px;
+    bottom: 0px;
+}
+
+#box3-positions {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(218, 2, 193);
+    position: relative;
+    left: 200px;
+}
+
+#box4-positions {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(103, 3, 93);
+    position: absolute; /* box 3 is it's nearest ancestor. if box 3 moves, it moves that many pixels also*/
+
+}
+
+#box5-positions {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(207, 83, 0);
+    position: sticky; /* when scrolling it will come with you and when you go back to its original place it will stay there until your scroll again*/
+    bottom: 0px;
 }
