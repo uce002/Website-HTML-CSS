@@ -264,3 +264,40 @@ scroll. scrollbar shows up. auto displays/disables scrollbar as and when needed*
 #container1-combinators + p { /* adjacent sibling. p4 is the next direct sibling, not 5*/
     background-color: #174b00;
 }
+
+/*27 PSEUDO-CLASSES*/
+a:link {
+    color: rgb(112, 205, 255);
+}
+
+a:hover {
+    color: rgb(182, 229, 255);
+    font-size: 1.1em;
+}
+
+a:active { /*when being clicked on*/
+    color: blue;
+    font-size: 1.1em;
+}
+
+.pseudo-class-list:hover {
+    background-color: rgb(255, 255, 112);
+}
+
+.pseudo-class-list:not(hover) {
+    background-color: rgb(209, 209, 209);
+}
+
+.pseudo-class-list:nth-child(1) { /* can put any number, odd, even and 3n (every 3rd number) etc. 3n +1 starts a 1, 4, 7. 3n+2 = 2, 5, 8*/
+    background-color: rgb(246, 174, 174);
+}
+
+#greeting p {
+    background-color: blue;
+    padding: 10px;
+    display: none;
+}
+
+#greeting:hover p { /* when you hover over the p element in the greeting div display the content on p in a block level element, full viewport*/
+    display: block;
+}
