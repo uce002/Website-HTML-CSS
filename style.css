@@ -234,3 +234,14 @@ scroll. scrollbar shows up. auto displays/disables scrollbar as and when needed*
     position: sticky; /* when scrolling it will come with you and when you go back to its original place it will stay there until your scroll again*/
     bottom: 0px;
 }
+
+/*25 BACKGROUND IMAGES*/
+/* body {
+    background-image: url(/Website-HTML-CSS/images/hunter_face3.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+
+/*26 COMBINATORS*/
