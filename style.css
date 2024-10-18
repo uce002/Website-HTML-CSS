@@ -245,3 +245,22 @@ scroll. scrollbar shows up. auto displays/disables scrollbar as and when needed*
 } */
 
 /*26 COMBINATORS*/
+#container1-combinators {
+    border: 2px solid;
+}
+
+#container1-combinators p { /* descendant. p1 to 3*/
+    background-color: #782400;
+}
+
+#container1-combinators > p { /* children. p1 to 2*/
+    background-color: #eb4700;
+}
+
+#container1-combinators ~ p { /* general sibling. p4 and p5 are children of the body, thus siblings to the div container*/
+    background-color: #09aa00;
+}
+
+#container1-combinators + p { /* adjacent sibling. p4 is the next direct sibling, not 5*/
+    background-color: #174b00;
+}
