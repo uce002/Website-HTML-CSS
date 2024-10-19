@@ -257,9 +257,9 @@ scroll. scrollbar shows up. auto displays/disables scrollbar as and when needed*
     background-color: #eb4700;
 }
 
-#container1-combinators ~ p { /* general sibling. p4 and p5 are children of the body, thus siblings to the div container*/
-    background-color: #09aa00;
-}
+/* #container1-combinators ~ p { /* general sibling. p4 and p5 are children of the body, thus siblings to the div container*/
+    /* background-color: #09aa00;
+} */
 
 #container1-combinators + p { /* adjacent sibling. p4 is the next direct sibling, not 5*/
     background-color: #174b00;
@@ -300,4 +300,40 @@ a:active { /*when being clicked on*/
 
 #greeting:hover p { /* when you hover over the p element in the greeting div display the content on p in a block level element, full viewport*/
     display: block;
+}
+
+/*28 PSEUDO-ELEMENTS*/
+.pseudo-element-h1::first-letter {
+    font-size: 2em;
+    font-style: italic;
+}
+
+.pseudo-element-p::first-line {
+    background-color: rgb(246, 246, 137);
+}
+    
+.pseudo-element-p::selection { /*selection is what your mouse has selected. click and drag across text*/
+    color: rgb(0, 179, 0);
+    background-color: rgb(147, 147, 147);
+}
+
+#fruit li::before { /*add something before each list item*/
+}
+
+#apple::after {
+    content: "🍎";
+}
+
+#orange::after {
+    content: "🍊";
+}
+
+#banana::after {
+    content: "🍌";
+}
+
+#fruit li::marker {
+    content: "✓";
+    color: rgb(58, 255, 58);
+    font-size: 1.2em;
 }
