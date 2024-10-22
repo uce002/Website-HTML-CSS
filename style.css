@@ -358,3 +358,44 @@ a:active { /*when being clicked on*/
 .pagination a:hover:not(active) /*when you hover over any links that aren't active (pages you're not on) change their colour*/ {
     background-color: rgb(154, 154, 154);
 }
+
+/*30 DROWPDOWN MENUS*/
+
+.dropdown {
+    display: inline;
+}
+
+.dropdown button {
+    background-color: rgb(206, 206, 206);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer; /*when you hover over button, cursor turn to pointer (hand)*/
+}
+
+.dropdown a { 
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 80px;
+    box-shadow: 2px 2px 5px green; /* horizontal position, vertical position, level of blur, colour*/
+}
+
+.dropdown:hover .content { /* when hovering over dropdown div, do the following to the content div*/
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: rgb(154, 151, 151);
+}
+
+.dropdown a:hover {
+    background-color: rgb(154, 151, 151);
+}
