@@ -360,9 +360,8 @@ a:active { /*when being clicked on*/
 }
 
 /*30 DROWPDOWN MENUS*/
-
 .dropdown {
-    display: inline;
+    display: inline-block;
 }
 
 .dropdown button {
@@ -398,4 +397,32 @@ a:active { /*when being clicked on*/
 
 .dropdown a:hover {
     background-color: rgb(154, 151, 151);
+}
+
+/*31 NAVIGATION BAR*/
+.navbar-h1 {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none; /*remove bullet points*/
+    background-color: rgb(154, 154, 154);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    padding: 15px;
+    display: block; /*take up full width of viewport for each a element*/
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgba(128, 128, 128, 0.645);
+}
+
+.navbar li {
+    float: left; /*to make navbar vertical remove this and line 412*/
 }
