@@ -426,3 +426,49 @@ a:active { /*when being clicked on*/
 .navbar li {
     float: left; /*to make navbar vertical remove this and line 412*/
 }
+
+/*32 WEBSITE LAYOUT*/
+.weblayout-h1 {
+    background-color: rgb(154, 154, 154);
+    text-align: center;
+    padding: 25px;
+}
+
+.weblayout-navbar {
+    background-color: rgb(54, 54, 54);
+    padding: 10px;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+section {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+article {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+/*line 168 imperative to disregard padding when calculating width so they all line up next to each other*/
+
+footer {
+    display: block;
+    clear: both;
+    background-color: black;
+    text-align: center;
+    padding: 25px;
+}
+
+/*if screen width is 600px or less, change these properties*/
+@media screen and (max-width:600px) {
+    aside, section, article {
+        width: 100%; /*take up 100% of the width available so it stacks the content*/
+    }
+}
