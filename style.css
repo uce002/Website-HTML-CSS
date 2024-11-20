@@ -490,3 +490,33 @@ footer {
     width: 100%; /*width is 100% of the gallery which is 200px;*/
     height: auto;
 }
+
+/*34 ICONS*/
+.icons {
+    text-align: center;
+}
+
+.icons a {
+    margin-right: 20px;
+}
+
+.fa-brands.fa-x-twitter.fa-5x {
+    color: rgb(255, 255, 255);
+}
+.fa-brands.fa-x-twitter.fa-5x:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fa-brands.fa-youtube.fa-5x { /*replace spaces with .*/
+    color: rgb(255, 0, 0);
+}
+.fa-brands.fa-youtube.fa-5x:hover {
+    color: rgba(255, 0, 0, 0.66);
+}
+
+.fa-brands.fa-instagram.fa-5x {
+    color: rgba(146, 0, 146);
+}
+.fa-brands.fa-instagram.fa-5x:hover {
+    color: rgba(146, 0, 146, 0.6);
+}
