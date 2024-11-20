@@ -520,3 +520,41 @@ footer {
 .fa-brands.fa-instagram.fa-5x:hover {
     color: rgba(146, 0, 146, 0.6);
 }
+
+/*35 FLEXBOX*/
+
+.flexbox-container {
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    /*flex-direction: row, column and reverse of each. can go left-right or up-down and can change order when reversed*/
+    /*justify-content: flex-start, flex-end, center, space-between, space-around, space-evenly. changes along main axis (left-right x)
+                        justify left, right, center and the same space in between*/
+    /*align-items: flex-start, flex-end, center, baseline (aligns text - change font size in one of the boxes to see this). changes along cross axis (up-down y) */
+    flex-wrap: wrap;
+    align-content: flex-start; /*to get rid of vertical space between boxes. can be flex-end (at the bottom), center, space-evenly etc*/
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.flexbox {
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#flexbox1 {
+    background-color: rgb(179, 0, 0);
+    /*align-self: center  remove flex wrap and align content above and this aligns only the object you set it to */
+}
+#flexbox2 {
+    background-color: rgb(46, 197, 0);
+}
+#flexbox3 {
+    background-color: rgb(0, 17, 207);
+}
+#flexbox4 {
+    background-color: rgb(196, 0, 134);
+}
