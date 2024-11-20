@@ -472,3 +472,21 @@ footer {
         width: 100%; /*take up 100% of the width available so it stacks the content*/
     }
 }
+
+/*33 IMAGE GALLERY*/
+.gallery {
+    display: inline-block; /*lines them up as opposed to underneath each other. they are now in line on a block level, not each on their own block level*/
+    border: 1px solid;
+    margin: 5px;
+    width: 200px;
+}
+
+.gallery .description {
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%; /*width is 100% of the gallery which is 200px;*/
+    height: auto;
+}
