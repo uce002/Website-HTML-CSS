@@ -592,3 +592,65 @@ footer {
     width: 100px;
     transform: translate(200%) rotateZ(120deg) scale(2);
 }
+
+/*37 ANIMATIONS*/
+.animation-box {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    background-color: rgb(0, 149, 255);
+    font-size: 9em;
+    text-align: center;
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    /*animation-iteration-count: infinite; can use infinite or any number
+    animation-direction: alternate; normal, reverse
+    animation-play-state: running; or paused useful for game using JS
+    animation-timing-function: ease-in-out, linear, steps(). speed up then slow down near the end, smooth motion, choose how many steps it takes to reach end*/
+}
+
+#animation-box1:hover {
+    animation-name: glow;
+    animation-duration: 1s;
+}
+
+@keyframes slideLeft {
+    from{transform: translateX(200%);} /*translate from 200% the width of the box to where it originally is*. FROM over there to here*/
+}
+@keyframes slideRight {
+    to{transform: translateX(200px);} /*translate to 300px on the axis(right) from original start. from here TO over there*/
+}
+@keyframes slideUp {
+    from{transform: translate(200px);}
+}
+@keyframes slideDown {
+    to{transform: translateY(200px);}
+}
+
+@keyframes rotate {
+    100%{transform: rotateX(360deg);}
+}
+@keyframes rotateHalf {
+    25%{transform: rotateZ(360deg);} /*complete the rotation for 0.25x the time then revert back (counterlcockwise) for the remaining time*/
+}
+
+@keyframes grow {
+    50%{transform: scale(1.5,1.5);} /*in a smooth motion grow by 2x then revert back. can do shrink by making scale 0.x, 0.x*/
+}
+
+@keyframes fade {
+    50%{opacity:0}
+}
+
+@keyframes colorChange {
+    0%{background-color: rgb(203, 23, 23)}
+    20%{background-color: rgb(224, 164, 23)}
+    40%{background-color: rgb(240, 243, 23)}
+    60%{background-color: rgb(24, 228, 28)}
+    80%{background-color: rgb(22, 238, 230)}
+    100%{background-color: rgb(116, 30, 246)}
+}
+
+@keyframes glow {
+    50%{box-shadow: 0px 0px 50px rgb(248, 248, 174)}
+}
