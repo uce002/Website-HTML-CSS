@@ -558,3 +558,37 @@ footer {
 #flexbox4 {
     background-color: rgb(196, 0, 134);
 }
+
+/*36 TRANSFORMATIONS*/
+.transformation-box {
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    background-color: #59ff5f;
+}
+#transform-box1 {
+    transform: translateX(100%) skewX(140deg); /*translate by pixels or % (100% it moves right by 100% of the width of the box (250px)). skew will slant on either axis. can apply more than one transformation at a time
+                                can do - % and px aswell and translate Y which moves by x% of the height*/
+    /*transform: translate(50px, 50px);   transform both on the x and y axis at the same time*/
+}
+
+#transform-box2 {
+    /*transform: rotateX(105deg); /*rotate on x axis is put a stick in it sideways (x-axis) and spin it around(up and over)*/
+    /*transform: rotateY(75deg); /*rotate on y axis put a stick vertical (y-axis) and spin it round (left to right or right to left for -)*/
+    transform: rotateZ(75deg); /*rotate on z axis is normal twist is around*/
+}
+
+#transform-box3 {
+    /*transform: scaleX(1.5); /* 1 is 100% 1.5 is 150%*/
+    /*transform: scaleY(0.3) /* 0.3 is 30% of original size*/
+    /* to get the same effect in one line do below*/
+    transform: scale(1.5, 0.3);
+}
+
+#cat-transform {
+    height: 100px;
+    width: 100px;
+    transform: translate(200%) rotateZ(120deg) scale(2);
+}
